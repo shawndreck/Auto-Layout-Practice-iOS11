@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +18,35 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JfF-HA-4lj" userLabel="Top Container">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="160"/>
+                                <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpO-ni-kjz" userLabel="Bottom Container">
+                                <rect key="frame" x="0.0" y="160" width="568" height="160"/>
+                                <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dpO-ni-kjz" secondAttribute="bottom" id="0iR-FS-NJu"/>
+                            <constraint firstAttribute="trailing" secondItem="JfF-HA-4lj" secondAttribute="trailing" id="3fW-YM-dwm"/>
+                            <constraint firstItem="dpO-ni-kjz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FSc-bk-hrp"/>
+                            <constraint firstItem="dpO-ni-kjz" firstAttribute="height" secondItem="JfF-HA-4lj" secondAttribute="height" id="Nyc-Kg-csi"/>
+                            <constraint firstItem="dpO-ni-kjz" firstAttribute="top" secondItem="JfF-HA-4lj" secondAttribute="bottom" id="PZj-lP-CJx"/>
+                            <constraint firstItem="JfF-HA-4lj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rlp-DN-HnK"/>
+                            <constraint firstItem="dpO-ni-kjz" firstAttribute="top" secondItem="JfF-HA-4lj" secondAttribute="bottom" id="f0F-VT-INg"/>
+                            <constraint firstAttribute="trailing" secondItem="dpO-ni-kjz" secondAttribute="trailing" id="kmC-sE-i30"/>
+                            <constraint firstItem="JfF-HA-4lj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="q42-a5-6vW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
