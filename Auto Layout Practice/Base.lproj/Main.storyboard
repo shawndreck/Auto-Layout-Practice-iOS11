@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="landscape">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,16 +18,42 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JfF-HA-4lj" userLabel="Top Container">
-                                <rect key="frame" x="0.0" y="0.0" width="568" height="160"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artBoard" translatesAutoresizingMaskIntoConstraints="NO" id="pSc-pa-DUQ">
+                                        <rect key="frame" x="108" y="56" width="105" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="iC1-i9-VLI"/>
+                                            <constraint firstAttribute="height" constant="128" id="yXL-TN-tqE"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pSc-pa-DUQ" firstAttribute="centerY" secondItem="JfF-HA-4lj" secondAttribute="centerY" id="PhE-Xo-EUK"/>
+                                    <constraint firstItem="pSc-pa-DUQ" firstAttribute="centerX" secondItem="JfF-HA-4lj" secondAttribute="centerX" id="rYN-5E-XZC"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpO-ni-kjz" userLabel="Bottom Container">
-                                <rect key="frame" x="0.0" y="160" width="568" height="160"/>
+                                <rect key="frame" x="0.0" y="240" width="320" height="240"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notebook" translatesAutoresizingMaskIntoConstraints="NO" id="RQr-h0-bcw">
+                                        <rect key="frame" x="108" y="56" width="105" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="4tf-dZ-5BI"/>
+                                            <constraint firstAttribute="height" constant="128" id="Yxj-Li-3Xu"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="RQr-h0-bcw" firstAttribute="centerX" secondItem="dpO-ni-kjz" secondAttribute="centerX" id="Bhh-kF-2dL"/>
+                                    <constraint firstItem="RQr-h0-bcw" firstAttribute="centerY" secondItem="dpO-ni-kjz" secondAttribute="centerY" id="xQu-gy-HA9"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,7 +72,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="135" y="132.04225352112675"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="artBoard" width="433" height="533"/>
+        <image name="notebook" width="373" height="527"/>
+    </resources>
 </document>
